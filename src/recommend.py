@@ -1,6 +1,23 @@
 import joblib
 import logging
+import os
 
+# Download cosine_sim.pkl from Google Drive if not present
+if not os.path.exists('src/cosine_sim.pkl'):
+    import gdown
+    gdown.download('https://drive.google.com/uc?id=YOUR_FILE_ID', 'src/cosine_sim.pkl', quiet=False)
+
+import joblib
+import logging
+
+# ...existing code...
+
+try:
+    df = joblib.load('src/df_cleaned.pkl')
+    cosine_sim = joblib.load('src/cosine_sim.pkl')
+    # ...existing code...
+except Exception as e:
+    # ...existing code...
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
