@@ -5,7 +5,7 @@ import os
 # Download cosine_sim.pkl from Google Drive if not present
 if not os.path.exists('src/cosine_sim.pkl'):
     import gdown
-    gdown.download('https://drive.google.com/uc?id=YOUR_FILE_ID', 'src/cosine_sim.pkl', quiet=False)
+    gdown.download('https://drive.google.com/file/d/1kbtRVzKFLYiHpZdkPwf2r36zmciHzyeH/view?usp=sharing', 'src/cosine_sim.pkl', quiet=False)
 
 import joblib
 import logging
