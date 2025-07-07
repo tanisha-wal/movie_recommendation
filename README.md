@@ -20,56 +20,56 @@ Welcome to **MovieMate**, your intelligent movie recommendation companion! Wheth
 - **OMDb API** – For movie metadata
 - **Render** – Deployment
 ---
+
 ## 📁 Folder Structure
+
+```text
 movie_recommendation/
 │
 ├── src/
-│ ├── main.py # Main Streamlit app
-│ ├── recommend.py # Recommendation logic
-│ ├── omdb_utils.py # OMDb API functions
-│ ├── config.json # Stores OMDb API key
-│ ├── cosine_sim.pkl # Precomputed similarity matrix
-│ ├── tfidf_matrix.pkl # TF-IDF matrix
-│ ├── movies.csv # Movie metadata
-│ └── df_cleaned.pkl # Cleaned movie dataframe
+│   ├── main.py             # Main Streamlit app
+│   ├── recommend.py        # Recommendation logic
+│   ├── omdb_utils.py       # OMDb API functions
+│   ├── config.json         # Stores OMDb API key
+│   ├── cosine_sim.pkl      # Precomputed similarity matrix
+│   ├── tfidf_matrix.pkl    # TF-IDF matrix
+│   ├── movies.csv          # Movie metadata
+│   └── df_cleaned.pkl      # Cleaned movie dataframe
 │
-├── requirements.txt # Python dependencies
-├── .gitignore
-└── README.md # You're reading it!
+├── requirements.txt        # Python dependencies
+├── .gitignore              # Git ignore file
+└── README.md               # You're reading it!
+
 
 ---
 
-## ⚙️ Installation & Running Locally
+## 🛠️ Installation & Running Locally
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/tanisha-wal/movie_recommendation.git
-   cd movie_recommendation
-2. **Set up a virtual environment**
-bash
-Copy
-Edit
+Follow these steps to get the app running on your local machine:
+
+### 1. 🚀 Clone the Repository
+
+```bash
+git clone https://github.com/tanisha-wal/movie_recommendation.git
+cd movie_recommendation
+###2. 🧪 Set Up a Virtual Environment
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-3.**Install dependencies**
-bash
-Copy
-Edit
+source venv/bin/activate      # For macOS/Linux
+venv\Scripts\activate         # For Windows
+###3.📦 Install Dependencies
+```bash
 pip install -r requirements.txt
-Add your OMDb API key
-4.**Create a file config.json inside the src folder:**
-json
-Copy
-Edit
+###4.🔑 Add Your OMDb API Key
+```json
 {
   "OMDB_API_KEY": "your_omdb_api_key_here"
 }
-5.**Run the app**
-bash
-Copy
-Edit
+###5.🖥️ Run the Application
+```bash
 cd src
 streamlit run main.py
+
 🧠 How it Works
 Movie similarity is calculated using TF-IDF vectorization and cosine similarity.
 
