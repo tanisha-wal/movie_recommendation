@@ -20,6 +20,15 @@ Welcome to **MovieMate**, your intelligent movie recommendation companion! Wheth
 - **OMDb API** – For movie metadata
 - **Render** – Deployment
 ---
+##📍 How it Works  
+Movie similarity is calculated using TF-IDF vectorization and cosine similarity.
+
+The OMDb API fetches live movie posters, ratings, and plot descriptions.
+
+A mood-based system and quiz are integrated into the UI for user-driven exploration.
+Author  
+Tanisha Wal  
+https://github.com/tanisha-wal
 
 ## 📁 Folder Structure
 
@@ -39,15 +48,4 @@ movie_recommendation/
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Git ignore file
 └── README.md               # You're reading it!
-```text
 
-🧠 How it Works
-Movie similarity is calculated using TF-IDF vectorization and cosine similarity.
-
-The OMDb API fetches live movie posters, ratings, and plot descriptions.
-
-A mood-based system and quiz are integrated into the UI for user-driven exploration.
-
-Author
-Tanisha Wal
-GitHub Profile
