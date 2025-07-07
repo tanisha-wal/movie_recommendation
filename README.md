@@ -39,36 +39,7 @@ movie_recommendation/
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Git ignore file
 └── README.md               # You're reading it!
-
-
----
-
-## 🛠️ Installation & Running Locally
-
-Follow these steps to get the app running on your local machine:
-
-### 1. 🚀 Clone the Repository
-
-```bash
-git clone https://github.com/tanisha-wal/movie_recommendation.git
-cd movie_recommendation
-###2. 🧪 Set Up a Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate      # For macOS/Linux
-venv\Scripts\activate         # For Windows
-###3.📦 Install Dependencies
-```bash
-pip install -r requirements.txt
-###4.🔑 Add Your OMDb API Key
-```json
-{
-  "OMDB_API_KEY": "your_omdb_api_key_here"
-}
-###5.🖥️ Run the Application
-```bash
-cd src
-streamlit run main.py
+```text
 
 🧠 How it Works
 Movie similarity is calculated using TF-IDF vectorization and cosine similarity.
